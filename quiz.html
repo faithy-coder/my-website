@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Fun Quiz</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("your-background.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            margin: 0;
+            padding: 20px;
+
+            /* Website background image */
+            background-image:
+                linear-gradient(
+                    rgba(3, 15, 30, 0.10),
+                    rgba(3, 15, 30, 0.20)
+                ),
+                url("pexels-crazy-motions-80195021-12920835.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .quiz {
+            background-color: rgba(0, 0, 0, 0.65);
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        fieldset {
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+
+        input, select {
+            margin: 8px 0;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a class="back" href="index.html">
+            &larr; Back to My Portfolio
+        </a>
+    </div>
+
+    <div class="quiz">
+
+        <h1>My Fun Quiz</h1>
+
+        <p>Welcome to my computer basics quiz!</p>
+        <p>Answer the questions below.</p>
+
+        <form>
+
+            <fieldset>
+                <legend>1. What does HTML stand for?</legend>
+
+                <input type="radio" name="html" value="a">
+                Hyper Text Markup Language<br>
+
+                <input type="radio" name="html" value="b">
+                High Text Machine Language<br>
+
+                <input type="radio" name="html" value="c">
+                Home Tool Markup Language
+            </fieldset>
+
+            <fieldset>
+                <legend>2. Which of these are web browsers?</legend>
+
+                <input type="checkbox" name="browser">
+                Google Chrome<br>
+
+                <input type="checkbox" name="browser">
+                Microsoft Word<br>
+
+                <input type="checkbox" name="browser">
+                Mozilla Firefox
+            </fieldset>
+
+            <fieldset>
+                <legend>3. What is your favourite subject?</legend>
+
+                <select name="subject">
+                    <option>Choose a subject</option>
+                    <option>Computer Studies</option>
+                    <option>Mathematics</option>
+                    <option>English</option>
+                    <option>Biology</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>4. What does CPU stand for?</legend>
+
+                <input type="radio" name="cpu" value="a">
+                Central Processing Unit<br>
+
+                <input type="radio" name="cpu" value="b">
+                Computer Personal Unit<br>
+
+                <input type="radio" name="cpu" value="c">
+                Central Program Utility
+            </fieldset>
+
+            <fieldset>
+                <legend>5. How confident are you in using a computer?</legend>
+
+                <input type="range" min="1" max="10">
+            </fieldset>
+
+            <button type="submit">Submit Answers</button>
+            <button type="reset">Clear Answers</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+        <title>My Youtube Channel</title>
+
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                background-color:#071525;
+                line-height: 1.6;
+                color: white;
+
+                /* Website background image */
+                background-image:
+                    linear-gradient(
+                        rgba(3, 15, 30, 0.10),
+                        rgba(3, 15, 30, 0.20)
+                    ),
+                    url("pexels-anniroenkae-15578011.jpg");
+
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+            }
+
+            header {
+                background-color: rgba(5, 25, 48, 0.85);
+                text-align: center;
+                padding: 30px 15px;
+                border-bottom: 2px solid #159cff;
+            }
+
+            header h1 {
+                font-size: 36px;
+                margin-bottom: 5px;
+                color: #ffffff;
+            }
+            header p {
+                color: #d4eaff;
+            }
+
+            nav {
+                margin-top: 20px;
+            }
+
+            nav a {
+                color: white;
+                text-decoration: none;
+                margin: 0 12px;
+                font-weight: bold;
+            }
+
+            nav a:hover {
+                color: #159cff;
+            }
+
+            main {
+                max-width: 1000px;
+                margin: auto;
+                padding: 20px;
+                background-color: rgba(7, 27, 48, 0.88);
+                border: 1px solid #234968;
+                border-radius: 10px;
+            }
+
+            section {
+                max-width: 900px;
+                margin: 25px auto;
+                padding: 25px;
+                background-color: rgba(7, 27, 48, 0.88);
+                border: 1px solid #124766;
+                border-radius: 12px;
+            }
+
+            h2 {
+                color: #45b4ff;
+            }
+
+            article {
+                background-color: rgba(7, 27, 48, 0.88);
+                padding: 20px;
+                margin: 20px 0;
+                border-radius: 10px;
+                margin-bottom: 30px;
+            }
+
+            video {
+                width: 100%;
+                max-width: 800px;
+                height: auto;
+                display: block;
+                margin: 20px auto;
+                border-radius: 10px;
+                background-color: #000;
+            }
+
+            a {
+                color: #5dc0ff;
+                text-decoration: none;
+            }
+
+            details {
+                background-color: rgba(7, 27, 48, 0.88);
+                padding: 12px;
+                border-radius: 6px;
+                margin-bottom: 12px;
+            }
+
+            summary {
+                color:#5dc0ff;
+                font-weight: bold;
+                cursor: pointer;
+            }
+
+            li {
+                padding: 6px 0;
+            }
+
+            footer {
+                text-align: center;
+                margin-top: 30px;
+                color: #52677b
+            }
+            @faytech(max-width: 600px) {
+                body {
+                    padding: 10px;
+                }
+                header h1 {
+                    font-size: 28px;
+                }
+                nav a {
+                    display: block;
+                    margin: 8px 0;
+                }
+                main {
+                    padding: 10px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <a class="back" href="index.html">
+                &larr; Back to My Portfolio
+            </a>
+        </div>
+        <header>
+            <h1>My Youtube Channel</h1>
+            <p>Welcome to my Youtube channel page!</p>
+            <nav>
+                <a href="latest">Home</a>
+                <a href="playlist">play</a>
+                <a href="about">profile</a>
+                <a href="download">download</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="featured-video">
+                <h2>Featured Video</h2>
+                <video controls>
+                    <source src="https://www.youtube.com/shorts/F7k2Eld66bc">
+                </video>
+                <article>
+                    <h3>My first web page.</h3>
+                    <p>In this video I explained how I built my first web page.</p>
+                </article>
+
+                <article>
+                    <h3>Top 5 Keyboard Shortcuts</h3>
+                    <p>👁️ 800 views. 1 week to go.</p>
+                    <p>You can learn keyboard shortcuts that will make you more efficient.</p>
+
+                    <section id="playlists">
+                        <h2>Playlists</h2>
+                        <details>
+                            <summary>Web Development Tutorials</summary>
+                            <ul>
+                                <li><a href="#">HTML Basics</a></li>
+                                <li><a href="#">CSS Styling</a></li>
+                                <li><a href="#">JavaScript Fundamentals</a></li>
+                            </ul>
+                        </details>
+
+                        <details>
+                            <summary>Cybersecurity Tips</summary>
+                            <ul>
+                                <li><a href="#">Protecting Your Online Privacy</a></li>
+                                <li><a href="#">Understanding Phishing Attacks</a></li>
+                                <li><a href="#">Best Practices for Password Security</a></li>
+                            </ul>
+                        </details>
+
+                        <details>
+                            <summary>Tech Reviews</summary>
+                            <ul>
+                                <li><a href="#">Latest Gadgets Review</a></li>
+                                <li><a href="#">Software Tools Comparison</a></li>
+                                <li><a href="#">Gaming Hardware Insights</a></li>
+                            </ul>
+                        </details>
+                </article>
+
+                <section id="about-channel">
+                    <h2>About the Channel</h2>
+                    <p>This channel is dedicated to sharing educational content, tutorials, and insights on various topics. Stay tuned for regular updates and new videos!</p>
+            </section>
+
+                <section id="about-me">
+                    <h2>About Me</h2>
+                    <p>I am a passionate educator and content creator, dedicated to helping others learn and grow in their tech journeys.</p>
+                </section>
+
+                <section id="subscribe">
+                    <h2>Subscribe</h2>
+                    <p>If you enjoy the content, please consider subscribing to my channel for more videos and updates.</p>
+                </section>
+            </section>
+        </main>
+
+        <footer>
+            &copy; 2026 Faytech Channel. All rights reserved.
+        </footer>
+</html>

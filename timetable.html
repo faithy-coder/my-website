@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Timetable</title>
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 25px;
+                line-height: 1.6;
+                color: white;
+
+                background-image:
+                  linear-gradient(
+                      rgba(28, 185, 233, 0.2),
+                      rgba(219, 224, 230, 0.1)
+                ),
+                url("pexels-soc-nang-d-ng-2150345854-34511906.jpg");
+
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+            }
+
+            .container {
+                max-width: 1000px;
+                margin: 30px auto;
+                background-color: rgba(130, 152, 177, 0.95);
+                padding: 25px;
+                border-radius: 12px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                border: 1px solid #31516e;
+                overflow-x : auto;
+            }
+            table {
+                max-width: 100%;
+                min-width: 650px;
+                Border-collapse: collapse;
+                margin-top: 20px;
+            }
+            capyion {
+                font-size: 20px;
+                font-weight: bold;
+                padding: 15px;
+                color: #10416c;
+            }
+            th, td {
+                border: 1px solid #31516e;
+                padding: 12px 15px;
+                text-align: center;
+            }
+            th {
+                background-color: #087ed1;
+                color: white;
+            }
+            tbody tr:nth-child(even) {
+                background-color: #f0f7ff;
+            }
+            tbody tr:hover {
+                background-color: #dceeff;
+
+            }
+            .break {
+                background-color: #fff0c2;
+                color: #805600;
+                font-weight: bold;
+            }
+            footer {
+                text-align: center;
+                margin-top: 30px;
+                color: #52677b
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <a class="back" href="index.html">
+                &larr; Back to My Portfolio
+            <h1>&#128197;School Timetable</h1>
+            <table>
+                <caption>SS1 Weekly Timetable</caption>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>8:00am - 9:00am</td>
+                        <td>Mathematics</td>
+                        <td>English</td>
+                        <td>Biology</td>
+                        <td>Chemistry</td>
+                        <td>Physics</td>
+                    </tr>
+                    <tr>
+                        <td>9:00am - 10:00am</td>
+                        <td>English</td>
+                        <td>Mathematics</td>
+                        <td>Physics</td>
+                        <td>Biology</td>
+                        <td>Chemistry</td>
+                    </tr>
+                    <tr class="break">
+                        <td colspan="7">Break Time</td>
+                    </tr>
+                    <tr>
+                        <td>10:30am - 11:30am</td>
+                        <td>Chemistry</td>
+                        <td>Biology</td>
+                        <td>Mathematics</td>
+                        <td>English</td>
+                        <td>Physics</td>
+                    </tr>
+                    <tr>
+                        <td>11:30am - 12:30pm</td>
+                        <td>Biology</td>
+                        <td>Chemistry</td>
+                        <td>English</td>
+                        <td>Physics</td>
+                        <td>Mathematics</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <footer>
+            &copy; 2026 Faith Ogbodo. All rights reserved.
+    </body>
+
+</html>
