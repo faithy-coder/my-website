@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faith's Portfolio</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: white;
+
+            /* Website background image */
+            background-image:
+                linear-gradient(
+                    rgba(3, 15, 30, 0.10),
+                    rgba(3, 15, 30, 0.20)
+                ),
+                url("pexels-fotios-photos-35995685.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        header {
+            background-color: rgba(5, 25, 48, 0.85);
+            text-align: center;
+            padding: 30px 15px;
+            border-bottom: 2px solid #159cff;
+        }
+
+        header h1 {
+            color: #159cff;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+        }
+
+        nav a:hover {
+            color: #159cff;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 25px auto;
+            padding: 25px;
+            background-color: rgba(7, 27, 48, 0.88);
+            border: 1px solid #234968;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #159cff;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #456078;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #10416c;
+        }
+
+        td a {
+            color: #49baff;
+        }
+
+        td a:hover {
+            color: white;
+        }
+
+        input, textarea {
+            width: 95%;
+            padding: 10px;
+            margin-top: 5px;
+            font-family: Arial, sans-serif;
+        }
+
+        button {
+            background-color: #087ed1;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #159cff;
+        }
+
+        footer {
+            background-color: rgba(5, 25, 48, 0.95);
+            text-align: center;
+            padding: 15px;
+        }
+
+        @faytech (max-width: 600px) {
+            section {
+                margin: 15px;
+                padding: 15px;
+            }
+
+            table {
+                font-size: 13px;
+            }
+
+            th, td {
+                padding: 7px;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Hello, I'm Faith Ogbodo</h1>
+        <p>Aspiring Cybersecurity Professional | Student | Creator</p>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+
+        <p>
+            My name is Faith Ogbodo. I am passionate about
+            technology, computer science and cybersecurity.
+        </p>
+
+        <p>
+            I am learning HTML, programming, networking and
+            automation. My goal is to become a cybersecurity
+            professional and use technology to solve problems.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <p>
+            Click on a project name to open its individual webpage.
+        </p>
+
+        <table>
+            <tr>
+                <th>#</th>
+                <th>Project Name</th>
+                <th>Skills Used</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td><a href="text.html">Formal Letter</a></td>
+                <td>Headings, paragraphs, formatting</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td><a href="resume.html">Personal Resume</a></td>
+                <td>Sections, lists, text</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td><a href="registration.html">Registration Form</a></td>
+                <td>Forms and inputs</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td><a href="youtube.html">YouTube Channel</a></td>
+                <td>Links and media</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td><a href="recipie.html">Recipe Page</a></td>
+                <td>Lists and images</td>
+            </tr>
+
+            <tr>
+                <td>6</td>
+                <td><a href="timetable.html">Class Timetable</a></td>
+                <td>Tables and rows</td>
+            </tr>
+
+            <tr>
+                <td>7</td>
+                <td><a href="07_travel_blog.html">Travel Blog</a></td>
+                <td>Articles and links</td>
+            </tr>
+
+            <tr>
+                <td>8</td>
+                <td><a href="08_survey_quiz.html">Survey Quiz</a></td>
+                <td>Inputs and forms</td>
+            </tr>
+
+            <tr>
+                <td>9</td>
+                <td><a href="index.html">My Portfolio</a></td>
+                <td>HTML and CSS</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <p>Thank you for visiting my portfolio!</p>
+
+        <form action="#">
+            <p>
+                <label for="name">Your Name:</label><br>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your name" required>
+            </p>
+
+            <p>
+                <label for="email">Your Email:</label><br>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email" required>
+            </p>
+
+            <p>
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message"
+                          rows="5" placeholder="Write your message"
+                          required></textarea>
+            </p>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Faith Ogbodo | My Personal Portfolio</p>
+    </footer>
+
+</body>
+</html>
